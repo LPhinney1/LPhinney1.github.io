@@ -1,0 +1,31 @@
+html {
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 20%;
+    margin-right: 5%;
+    border-left: 50px double blue;
+    border-right: 25px solid white;
+    border-top: 50px solid red;
+    border-bottom: 50px dashed white;
+
+}
+p {
+    font-size: xx-large;
+    text-align: center;
+    background-color: blueviolet;
+}
+ul, li {
+    text-align: center;
+}
+h1, h3 {
+    text-decoration: underline;
+}
+nav {
+    background-color: darkgreen;
+    display: grid;
+}
+img {
+    border: 50px dashed white;
+    height: 400px; 
+    width: 400px;
+}

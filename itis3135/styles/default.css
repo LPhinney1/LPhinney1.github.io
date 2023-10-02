@@ -74,7 +74,7 @@ a:hover {
 }
     
 a:active {
-    color: #FFFDEB;
+    color: #F5F5F5;
 }
 
 table {
@@ -116,9 +116,18 @@ label {
 
 input[type="submit"], input[type="reset"] {
     display: inline;
-    min-height: 40px;    
-    min-width: 200px;
-    color: #FFFDEB;
+    min-height: 36px;    
+    min-width: 180px;
+    color: #F5F5F5;
+    background-color: #58355E;
+    margin: 9px 6px;
+}
+
+input[type="button"] {
+    display: inline;
+    min-height: 36px;
+    min-width: 90px;
+    color: #F5F5F5;
     background-color: #58355E;
     margin: 9px 6px;
 }
@@ -128,6 +137,7 @@ img {
     max-height: 3.5in;
     margin-left: auto;
     margin-right: auto;
+    border: 3px solid #58355E;
 }
 
 li {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" id="function1_target">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | First Scripts</title>
+      
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>First Scripts</h2>
+            <h3 id="time">Time is</h3>  
+            <h3 id="greeting"></h3>
+            <fieldset>
+                <label for="name">Enter your name: <input id="name" name="name" type="text" required></label>
+                <label for="mood">How are you doing today? <input id="mood" name="mood" type="text" required></label>
+                <input type="submit" value="SUBMIT" onclick="greeting()">
+            </fieldset>
+            <fieldset>
+                <label for="fav_number">Enter your favorite number (1-10)<input id="fav_number" name="fav_number" type="text" required></label>
+                <input type="submit" value="SUBMIT" onclick="favorite_number()">
+            </fieldset>
+            <fieldset>
+                <p>The Laughing Pterodactyl's Miscellaneous JavaScript Functions</p>
+                <input type="button" value="Add Text to Page" onclick="f1()">
+                <input type="button" value="Randomize Background Color" onclick="f2()">
+                <input type="button" value="Simple Interest Calculator" onclick="f3()">
+                <input type="button" value="Open Random Classmates Webpage" onclick="f4()">
+            </fieldset>
+            <p id="function2_target"></p>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/HTMLInclude.js"></script>
+        <script src="../scripts/defaultscript.js"></script>
+    </body>
+    </html>

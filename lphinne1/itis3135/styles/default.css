@@ -123,26 +123,30 @@ input[type="submit"], input[type="reset"] {
     margin: 9px 6px;
 }
 
-input[type="button"] {
+input[type="button"], button {
     display: inline;
     min-height: 36px;
-    min-width: 90px;
+    min-width: 180px;
     color: #F5F5F5;
     background-color: #58355E;
     margin: 9px 6px;
 }
 
 img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-}
+    text-align: center;
+;}
 
 li {
     text-align: left;
     padding-bottom: 6px;
+}
+
+hr {
+    background-color: #419D78;
 }
 
 .image-intro {

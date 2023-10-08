@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | BYO Introduction</title>
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>Build Your Own Introduction Page</h2>
+            <form id="main-form" action="#">
+                <fieldset>
+                    <legend>Enter your information and press 'submit' to generate your very own introduction page.</legend>
+                    <label for="name">Name | <input id="name" name="name" type="text" required></label>
+                    <label for="mascot">Mascot | <input id="mascot" name="mascot" type="text" required></label>
+                    <label for="imageUp">Upload Image | <input id="imageUp" name="imageUp" type="file" accept=".png, .jpg, .jpeg" required></label>
+                    <label for="caption">Image Caption | <input id="caption" name="caption" type="text" required></label>
+                    <label for="personal_background">Personal Background | <input id="personal_background" name="personal_background" type="text" required></label>
+                    <label for="professional_background">Professional Background | <input id="professional_background" name="professional_background" type="text" required></label>
+                    <label for="academic_background">Academic Background | <input id="academic_background" name="academic_background" type="text" required></label>
+                    <label for="web_dev_background">Web Development Background | <input id="web_dev_background" name="web_dev_background" type="text" required></label>
+                    <label for="platform">Primary Computer OS | <input id="platform" name="platform" type="text" required></label>
+                    <hr> <!--CLASSES ENTRY-->
+                    <div id="classesTextEntry">
+                        <label id ="classes" for="classesText">(Class ID#) + | + (Course Description) | <input id="classesText" name="classesText" type="text" required></label>
+                    </div>
+                    <hr>
+                    <p>(Optional)</p>
+                    <label for="funny">Funny side note to add? | <input id="funny" name="funny" type="text"></label>
+                    <label for="additional">Anything else? | <input id="additional" name="additional" type="text"></label>
+                    <hr>
+                    <label for="consent">I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available&ensp;|&ensp;<input id="consent" type="checkbox" name="consent" required></label>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </fieldset>
+            </form>
+            <button value="add Text Entry" id="addTextEntry" onclick="addTextEntry()" style="margin-left: 16.5px;">Add Class Entry</button>
+            <button value="delete Text Entry" id="deleteTextEntry" onclick="deleteTextEntry()">Delete Class Entry</button>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/HTMLInclude.js"></script>
+        <script src="../scripts/survey.js"></script>
+    </body>
+    </html>

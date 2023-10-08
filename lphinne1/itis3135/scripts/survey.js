@@ -134,7 +134,6 @@ function addTextEntry()
 //REMOVE TEXT BOX
 function deleteTextEntry()
 {
-
     document.getElementById("classes").remove();        
     if(document.getElementById("classes") === null)
     {

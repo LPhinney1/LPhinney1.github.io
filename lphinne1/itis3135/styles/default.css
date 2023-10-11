@@ -44,6 +44,13 @@ h1, h2, h3 {
     color: #58355E;
 }
 
+h4 {
+    font-weight: 999;
+    font-family: 'Raleway', sans-serif;
+    color: #58355E;
+    font-size: 1.25rem;
+}
+
 h1, h2, nav, a, footer {
     text-align: center;
 }
@@ -138,7 +145,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-;}
+}
 
 li {
     text-align: left;
@@ -151,8 +158,13 @@ hr {
 
 .image-intro {
     display: inline-block;
-    max-width: 2.5in;    
+    max-height: 4in;    
     border: 3px solid #58355E;
+}
+
+.image-project1{
+    display: block;
+    max-height: 5in;
 }
 
 .salary {

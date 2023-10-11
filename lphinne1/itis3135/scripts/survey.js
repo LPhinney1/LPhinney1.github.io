@@ -109,9 +109,7 @@ document.getElementById("main-form").addEventListener("submit", function(_afterS
 
 //ON RESET BUTTON LISTENER
 document.getElementById("main-form").addEventListener("reset", function(_afterReset) 
-{
-    window.location.reload();
-});
+{ window.location.reload(); });
 
 //ADD TEXT BOX
 function addTextEntry()

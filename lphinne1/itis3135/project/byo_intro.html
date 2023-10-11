@@ -13,7 +13,8 @@
         <div data-include="../components/header.html"></div>
         <main>
             <h2>Build Your Own Introduction Page</h2>
-            <form id="main-form" action="#">
+            <div id="main-form">
+            <form action="#">
                 <fieldset>
                     <legend>Enter your information and press 'submit' to generate your very own introduction page.</legend>
                     <label for="name">Name | <input id="name" name="name" type="text" required></label>
@@ -41,6 +42,7 @@
             </form>
             <button value="add Text Entry" id="addTextEntry" onclick="addTextEntry()" style="margin-left: 16.5px;">Add Class Entry</button>
             <button value="delete Text Entry" id="deleteTextEntry" onclick="deleteTextEntry()">Delete Class Entry</button>
+            </div>
         </main>
         <div data-include="../components/footer.html"></div>
         <script src="../scripts/HTMLInclude.js"></script>

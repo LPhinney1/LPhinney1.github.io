@@ -211,6 +211,6 @@ hr {
         max-height: 2.5in;
     }
     .image-project1{
-        max-height: 2in;
+        max-width: min-content;
     }
 }

@@ -180,29 +180,28 @@ hr {
 @media (max-width: 576px) 
 {
     html, header, footer {
-        max-width: 99%;
-        width: auto;
-        margin: 3px;
-    }
-
-    main {
         max-width: 95%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: none;
+        margin-right: none;
+    }
+    main {
+        min-width: none;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: none;
+        margin-right: none;    
+    }
+    header, footer {
         width: auto;
-        margin: 3px;
     }
     img {
-        max-width: 99%;
         max-height: 2in;
     }
-
-    header, footer {
-        padding: 3px;
-    }
-
     a {
         padding: 0px;
     }
-
     input[type="submit"], input[type="reset"], input[type="button"], button {
         min-height: auto;
         min-width: auto;
@@ -212,6 +211,6 @@ hr {
         max-height: 2.5in;
     }
     .image-project1{
-        max-height: 3in;
+        max-height: 2in;
     }
 }

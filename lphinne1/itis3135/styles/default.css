@@ -47,20 +47,22 @@ h1, h2 {
     margin-top: 9px;
     margin-bottom: 9px;
     font-family: 'Anonymous Pro', monospace;
-    font-size: xx-large;
+    font-size: 2rem;
     color: var(--violet);
 }
 
 h3 {
     font-weight: 999;
-    font-size: xx-large;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: x-large;
     color: var(--violet);
 }
 
 h4 {
     font-weight: 999;
     color: var(--violet);
-    font-size: larger;
+    font-size: large;
 }
 
 h1, h2, nav, a, footer {
@@ -97,6 +99,9 @@ a:active {
     color: var(--whiteSmoke);
 }
 
+nav {
+    font-size: large;
+}
 table {
     border: 3px solid var(--violet);
     border-collapse: collapse;
@@ -143,16 +148,12 @@ button, input[type="button"], input[type="submit"], input[type="reset"] {
     margin: 9px 6px;
 }
 
-input[type="submit"] {
-    background-color: var(--jungleGreen);
-}
-
 img {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
 }
 
 li {
@@ -163,7 +164,6 @@ li {
 hr {
     background-color: var(--jungleGreen);
 }
-
 
 .image-intro {
     display: inline-block;
@@ -219,7 +219,7 @@ hr {
 @media (max-width: 576px) {
 
     html, header, footer {
-        max-width: 95%;
+        min-width: min-content;
         margin-top: 3px;
         margin-bottom: 3px;
         margin-left: 0px;

@@ -200,6 +200,9 @@ hr {
     margin-top: 3px;
 }
 .calculator_display {
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--violet);
+    font-size: larger;
     border: 3px solid var(--violet);
     padding: 3px;
 }

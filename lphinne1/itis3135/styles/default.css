@@ -12,12 +12,14 @@
     --mimiPink: #FAD8EF;
     --whiteSmoke: #F5F5F5;
 }
+
 html {
     background-color: var(--lilac);
     font-family: 'Raleway', sans-serif;
 }
 
-header, footer {
+header,
+footer {
     color: var(--violet);
     background-color: var(--mimiPink);
     border: 3px solid var(--violet);
@@ -41,7 +43,8 @@ main {
     font-size: 1.1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2 {
     font-weight: 999;
     margin-top: 9px;
     margin-bottom: 9px;
@@ -50,14 +53,23 @@ h1, h2, h3 {
     color: var(--violet);
 }
 
-h4 {
+h3 {
     font-weight: 999;
-    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
     color: var(--violet);
-    font-size: 1.25rem;
 }
 
-h1, h2, nav, a, footer {
+h4 {
+    font-weight: 999;
+    color: var(--violet);
+    font-size: larger;
+}
+
+h1,
+h2,
+nav,
+a,
+footer {
     text-align: center;
 }
 
@@ -76,17 +88,17 @@ a:link {
     color: var(--violet);
     text-decoration: none;
 }
-    
+
 a:visited {
     color: var(--violet);
     text-decoration: none;
 }
-    
+
 a:hover {
     color: var(--jungleGreen);
     font-weight: 1000;
 }
-    
+
 a:active {
     color: var(--whiteSmoke);
 }
@@ -96,8 +108,9 @@ table {
     border-collapse: collapse;
 }
 
-td, th {
-    border-bottom: 1px solid var(--violet);    
+td,
+th {
+    border-bottom: 1px solid var(--violet);
     border-right: 1px solid var(--violet);
     text-align: left;
     padding: 3px;
@@ -128,17 +141,21 @@ label {
     margin: 0px
 }
 
-button, input[type="button"], input[type="submit"], input[type="reset"] {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
     display: inline;
-    min-height: 36px;    
+    min-height: 36px;
     min-width: 180px;
     color: var(--whiteSmoke);
     background-color: var(--violet);
     margin: 9px 6px;
 }
 
-input[type="submit"]
-{ background-color: var(--jungleGreen); }
+input[type="submit"] {
+    background-color: var(--jungleGreen);
+}
 
 img {
     margin-left: auto;
@@ -160,11 +177,11 @@ hr {
 
 .image-intro {
     display: inline-block;
-    max-height: 4in;    
+    max-height: 4in;
     border: 3px solid var(--violet);
 }
 
-.image-project1{
+.image-project1 {
     display: block;
     max-height: 5in;
 }
@@ -173,7 +190,9 @@ hr {
     text-align: right;
 }
 
-.category, .name, .email {
+.category,
+.name,
+.email {
     padding-right: 20px;
 }
 
@@ -181,7 +200,8 @@ hr {
     border-bottom: none;
 }
 
-.square-button, div.calculator_keys button {
+.square-button,
+div.calculator_keys button {
     min-height: 60px;
     min-width: 60px;
     font-size: 1.5rem;
@@ -194,11 +214,13 @@ hr {
     width: max-content;
     padding: 9px;
 }
+
 .calculator_keys {
     border: 3px solid var(--violet);
     padding: 3px;
     margin-top: 3px;
 }
+
 .calculator_display {
     font-family: 'Anonymous Pro', monospace;
     color: var(--violet);
@@ -206,39 +228,51 @@ hr {
     border: 3px solid var(--violet);
     padding: 3px;
 }
-@media (max-width: 576px) 
-{
-    html, header, footer {
+
+@media (max-width: 576px) {
+
+    html,
+    header,
+    footer {
         max-width: 95%;
         margin-top: 3px;
         margin-bottom: 3px;
         margin-left: 0px;
         margin-right: 0px;
     }
+
     main {
         margin-top: 3px;
         margin-bottom: 3px;
         margin-left: 0px;
-        margin-right: 0px;    
+        margin-right: 0px;
     }
-    header, footer {
+
+    header,
+    footer {
         width: auto;
     }
+
     img {
         max-height: 2in;
     }
+
     a {
         padding: 0px;
     }
-    input[type="submit"], input[type="reset"] {
+
+    input[type="submit"],
+    input[type="reset"] {
         min-height: auto;
         min-width: auto;
         margin: 3px 0;
     }
+
     .image-intro {
         max-height: 2.5in;
     }
-    .image-project1{
+
+    .image-project1 {
         max-width: min-content;
     }
 }

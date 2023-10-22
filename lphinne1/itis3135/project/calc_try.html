@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | Calculator Try</title>
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>Calculator Try</h2>
+            <div style="border: 3px solid #58355E; width: max-content; margin-left: auto; margin-right: auto;">
+                <div> 
+                    <h4 id="text-entry" style="font-family: 'Anonymous Pro', monospace; text-align: center;"></h4>
+                </div>
+                <div> 
+                    <button class="square-button" onclick="addition()">&plus;</button>
+                    <button class="square-button" onclick="subtraction()">&minus;</button>
+                    <button class="square-button" onclick="multiplication()">&times;</button>
+                    <button class="square-button" onclick="division()">&divide;</button>
+                </div>
+                <div> 
+                    <button class="square-button" onclick="seven()">7</button>
+                    <button class="square-button" onclick="eight()">8</button>
+                    <button class="square-button" onclick="nine()">9</button>
+                    <button class="square-button" style="visibility: hidden;">.</button>
+                </div>
+                <div> 
+                    <button class="square-button" onclick="four()">4</button>
+                    <button class="square-button" onclick="five()">5</button>
+                    <button class="square-button" onclick="six()">6</button>
+                    <button class="square-button" style="visibility: hidden;">.</button>
+                </div>
+                <div> 
+                    <button class="square-button" onclick="one()">1</button>
+                    <button class="square-button" onclick="two()">2</button>
+                    <button class="square-button" onclick="three()">3</button>
+                    <button class="square-button" style="visibility: hidden;">.</button>
+                </div>
+                <div> 
+                    <button class="square-button" onclick="zero()">0</button>
+                    <button class="square-button" onclick="decimal()">.</button>
+                    <button class="square-button" onclick="clearText()">c</button>
+                    <button class="square-button" onclick="equals()">=</button>
+                </div>
+            </div>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/calc_try.js"></script>
+        <script src="../scripts/HTMLInclude.js"></script>
+    </body>
+    </html>

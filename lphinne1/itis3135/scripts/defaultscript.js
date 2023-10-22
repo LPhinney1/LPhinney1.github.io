@@ -5,7 +5,6 @@ function current_time()
     var new_time = 'Time is '+(new_date.getHours()%12)+':'+new_date.getMinutes()+':'+new_date.getSeconds()+' on '+(new_date.getMonth()+1)+'-'+new_date.getDate()+'-'+new_date.getFullYear();
     document.getElementById("get_current_time").innerHTML = new_time;
 }
-
 setInterval(current_time, 1000); //activate function on one second interval.
 
 function greeting() 

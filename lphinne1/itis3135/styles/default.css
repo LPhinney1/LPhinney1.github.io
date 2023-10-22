@@ -1,51 +1,59 @@
-/*   https://coolors.co/d295bf-58355e-419d78-fad8ef-fffffb
+/*   https://coolors.co/d295bf-58355e-419d78-fad8ef-f5f5f5
 #d295bf Lilac
 #58355e Violet (JTC)
 #419d78 Jungle Green
 #fad8ef Mimi Pink
-#fffffb Baby Powder
+#f5f5f5 White Smoke
 */
+* {
+    --lilac: #D295BF;
+    --violet: #58355E;
+    --jungleGreen: #419D78;
+    --mimiPink: #FAD8EF;
+    --whiteSmoke: #F5F5F5;
+}
 html {
-    background-color: #D295BF;
+    background-color: var(--lilac);
     font-family: 'Raleway', sans-serif;
 }
 
 header, footer {
-    background-color: #FAD8EF;
-    border: 3px solid #58355E;
+    color: var(--violet);
+    background-color: var(--mimiPink);
+    border: 3px solid var(--violet);
     padding: 30px;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
-    color: #1C1D21;
 }
 
 main {
-    background-color: #FAD8EF;
-    border: 3px solid #58355E;
+    color: #1C1D21;
+    background-color: var(--mimiPink);
+    border: 3px solid var(--violet);
     margin: 9px 0px;
     padding: 30px;
     width: min-content;
     min-width: 87.5%;
     margin-left: auto;
     margin-right: auto;
-    color: #1C1D21;
     text-align: left;
+    font-size: 1.1rem;
 }
 
 h1, h2, h3 {
-    font-weight: 900;
+    font-weight: 999;
     margin-top: 9px;
     margin-bottom: 9px;
     font-family: 'Anonymous Pro', monospace;
     font-size: xx-large;
-    color: #58355E;
+    color: var(--violet);
 }
 
 h4 {
     font-weight: 999;
     font-family: 'Raleway', sans-serif;
-    color: #58355E;
+    color: var(--violet);
     font-size: 1.25rem;
 }
 
@@ -57,6 +65,7 @@ p {
     padding: 6px;
     margin: 0;
 }
+
 figure {
     margin-left: auto;
     margin-right: auto;
@@ -64,39 +73,39 @@ figure {
 }
 
 a:link {
-    color: #58355E;
+    color: var(--violet);
     text-decoration: none;
 }
     
 a:visited {
-    color: #58355E;
+    color: var(--violet);
     text-decoration: none;
 }
     
 a:hover {
-    color: #419D78;
+    color: var(--jungleGreen);
     font-weight: 1000;
 }
     
 a:active {
-    color: #F5F5F5;
+    color: var(--whiteSmoke);
 }
 
 table {
-    border: 3px solid #58355E;
+    border: 3px solid var(--violet);
     border-collapse: collapse;
 }
 
 td, th {
-    border-bottom: 1px solid #58355E;    
-    border-right: 1px solid #58355E;
+    border-bottom: 1px solid var(--violet);    
+    border-right: 1px solid var(--violet);
     text-align: left;
     padding: 3px;
 }
 
 th {
     color: #1C1D21;
-    background-color: #D295BF;
+    background-color: var(--lilac);
 }
 
 form {
@@ -105,8 +114,8 @@ form {
 }
 
 fieldset {
-    border-top: 1px solid #58355E;
-    border-bottom: 1px solid #58355E;
+    border-top: 1px solid var(--violet);
+    border-bottom: 1px solid var(--violet);
     border-left: none;
     border-right: none;
     margin-bottom: 6px;
@@ -119,23 +128,17 @@ label {
     margin: 0px
 }
 
-input[type="submit"], input[type="reset"] {
+button, input[type="button"], input[type="submit"], input[type="reset"] {
     display: inline;
     min-height: 36px;    
     min-width: 180px;
-    color: #F5F5F5;
-    background-color: #58355E;
+    color: var(--whiteSmoke);
+    background-color: var(--violet);
     margin: 9px 6px;
 }
 
-input[type="button"], button {
-    display: inline;
-    min-height: 36px;
-    min-width: 180px;
-    color: #F5F5F5;
-    background-color: #58355E;
-    margin: 9px 6px;
-}
+input[type="submit"]
+{ background-color: var(--jungleGreen); }
 
 img {
     margin-left: auto;
@@ -151,13 +154,14 @@ li {
 }
 
 hr {
-    background-color: #419D78;
+    background-color: var(--jungleGreen);
 }
+
 
 .image-intro {
     display: inline-block;
     max-height: 4in;    
-    border: 3px solid #58355E;
+    border: 3px solid var(--violet);
 }
 
 .image-project1{
@@ -177,21 +181,42 @@ hr {
     border-bottom: none;
 }
 
+.square-button, div.calculator_keys button {
+    min-height: 60px;
+    min-width: 60px;
+    font-size: 1.5rem;
+    color: var(--whiteSmoke);
+    background-color: var(--jungleGreen);
+}
+
+.container {
+    border: 3px solid var(--violet);
+    width: max-content;
+    padding: 9px;
+}
+.calculator_keys {
+    border: 3px solid var(--violet);
+    padding: 3px;
+    margin-top: 3px;
+}
+.calculator_display {
+    border: 3px solid var(--violet);
+    padding: 3px;
+}
 @media (max-width: 576px) 
 {
     html, header, footer {
         max-width: 95%;
         margin-top: 3px;
         margin-bottom: 3px;
-        margin-left: none;
-        margin-right: none;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     main {
-        min-width: none;
         margin-top: 3px;
         margin-bottom: 3px;
-        margin-left: none;
-        margin-right: none;    
+        margin-left: 0px;
+        margin-right: 0px;    
     }
     header, footer {
         width: auto;
@@ -202,7 +227,7 @@ hr {
     a {
         padding: 0px;
     }
-    input[type="submit"], input[type="reset"], input[type="button"], button {
+    input[type="submit"], input[type="reset"] {
         min-height: auto;
         min-width: auto;
         margin: 3px 0;

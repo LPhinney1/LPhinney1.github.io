@@ -72,8 +72,13 @@ h1, h2, nav, a, footer {
 p {
     padding: 6px;
     margin: 0;
+    color: #1C1D21;
 }
 
+strong {
+    color: var(--violet);
+    font-weight: 1000;
+}
 figure {
     margin-left: auto;
     margin-right: auto;
@@ -158,11 +163,7 @@ img {
 
 li {
     text-align: left;
-    padding-bottom: 6px;
-}
-
-hr {
-    background-color: var(--jungleGreen);
+    padding: 6px;
 }
 
 .image-intro {

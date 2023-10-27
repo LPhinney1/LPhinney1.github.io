@@ -68,17 +68,9 @@ keys.addEventListener('click', e => {
 })
 const calculate = (number1, operator, number2) => {
     let result = ''
-    if (operator === 'add') {
-        result = parseFloat(number1) + parseFloat(number2)
-    }
+    if (operator === 'add') { result = parseFloat(number1) + parseFloat(number2) }
     else if (operator === 'subtract') { result = parseFloat(number1) - parseFloat(number2) }
     else if (operator === 'multiply') { result = parseFloat(number1) * parseFloat(number2) }
     else if (operator === 'divide') { result = parseFloat(number1) / parseFloat(number2) }
     return result
-}
-window.onload = function () {
-    document.getElementById("button4").onclick = showNum; // button4 is the id of the button that has a value of 4 
-}
-function showNum() {
-    document.formCalculator.textNumber.value += this.value;
 }

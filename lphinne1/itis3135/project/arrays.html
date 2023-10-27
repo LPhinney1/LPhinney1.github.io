@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | Arrays</title>
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>Arrays</h2>
+            <div style="text-align: center;">
+                <button onclick="addSalary()">Add Salary</button>
+                <button onclick="displaySalary()">Display Salary</button>
+                <button onclick="displayResults()">Display Results</button>
+                <label for="employee-list">Employee List</label>
+                <select name="employee-list" id="employee-list" size="3">
+                    <option value="di-von-briesen">D.I. von Briesen</option>
+                    <option value="esam-abdullah">Esam Abdullah</option>
+                    <option value="medina-gomez">Medina Gomez</option>
+                    <option value="kingston-hill">Kingston Hill</option>
+                    <option value="mateo-perdomo">Mateo Perdomo</option>
+                    <option value="alec-woods">Alec Woods</option>
+                    <option value="amaan-rashid">Amaan Rashid</option>
+                </select> 
+                <p id="results" style="font-family: 'Anonymous Pro'; visibility: collapse;">0</p>
+                <table id="employee-table" style="margin-left: auto; margin-right: auto; visibility: collapse;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/arrays.js"></script>
+        <script src="../scripts/HTMLInclude.js"></script>
+    </body>
+    </html>

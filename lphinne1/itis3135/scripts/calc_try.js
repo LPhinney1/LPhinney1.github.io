@@ -1,87 +1,56 @@
-function seven()
-{
-    var textEntry = document.getElementById('text-entry');
+let textEntry = document.getElementById('text-entry');
+function seven() {
     textEntry.textContent += '7';
 }
-function eight()
-{
-    var textEntry = document.getElementById('text-entry');
+function eight() {
     textEntry.textContent += '8';
 }
-function nine()
-{
-    var textEntry = document.getElementById('text-entry');
+function nine() {
     textEntry.textContent += '9';
 }
-function four()
-{
-    var textEntry = document.getElementById('text-entry');
+function four() {
     textEntry.textContent += '4';
 }
-function five()
-{
-    var textEntry = document.getElementById('text-entry');
+function five() {
     textEntry.textContent += '5';
 }
-function six()
-{
-    var textEntry = document.getElementById('text-entry');
+function six() {
     textEntry.textContent += '6';
 }
-function one()
-{
-    var textEntry = document.getElementById('text-entry');
+function one() {
     textEntry.textContent += '1';
 }
-function two()
-{
-    var textEntry = document.getElementById('text-entry');
+function two() {
     textEntry.textContent += '2';
 }
-function three()
-{
-    var textEntry = document.getElementById('text-entry');
+function three() {
     textEntry.textContent += '3';
 }
-function zero()
-{
-    var textEntry = document.getElementById('text-entry');
+function zero() {
     textEntry.textContent += '0';
 }
-function decimal()
-{
-    var textEntry = document.getElementById('text-entry');
+function decimal() {
     textEntry.textContent += '.';
 }
-function clearText()
-{
-    var textEntry = document.getElementById('text-entry');
+function clearText() {
     textEntry.textContent = '';
 }
-function addition()
-{
-    var textEntry = document.getElementById('text-entry');
+function addition() {
     textEntry.textContent += '+';
 }
-function subtraction()
-{
-    var textEntry = document.getElementById('text-entry');
+function subtraction() {
     textEntry.textContent += '-';
-
 }
-function multiplication()
-{
-    var textEntry = document.getElementById('text-entry');
+function multiplication() {
     textEntry.textContent += '*';
 }
-function division()
-{
-    var textEntry = document.getElementById('text-entry');
+function division() {
     textEntry.textContent += '/';
 }
-function equals()
-{
-    var textEntry = document.getElementById('text-entry');
+function equals() {
     let textStuff = textEntry.textContent;
     textEntry.textContent = eval(textStuff);
+}
+function roundToFive(num) {
+    return (Math.round(num + "e" + 5) + "e-" + 5);
 }

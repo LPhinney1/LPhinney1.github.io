@@ -18,18 +18,26 @@ let salaries = [
 ];
 function addSalary()
 {
-    let newPerson = prompt("What is the employees full name?\n[STRING]");
-    let newSalary = parseInt(prompt("What is the employees salary?\n[INT]"));
-    person.push(newPerson);
-    salaries.push(newSalary);
-    let selectList = document.getElementById('employee-list');
-    let newListItem = document.createElement('option');
-    newListItem.textContent = newPerson;
-    selectList.appendChild(newListItem);
+    let newPerson = prompt("What is the employees full name?");
+    let newSalary = parseInt(prompt("What is the employees salary?"));
+    let newPersonRegex = /^[A-Za-z\s.]+$/;
+    let newSalaryRegex = /^\d+$/;
+    if(newPersonRegex.test(newPerson) && newSalaryRegex.test(newSalary))
+    {
+        person.push(newPerson);
+        salaries.push(newSalary);
+        let selectList = document.getElementById('employee-list');
+        let newListItem = document.createElement('option');
+        newListItem.textContent = newPerson;
+        selectList.appendChild(newListItem);
+    }
+    else
+    { alert("Please try again. An input contained a forbidden character."); }
 }
 function displaySalary()
 {
     let employeeTable = document.getElementById('employee-table');
+    employeeTable.innerHTML = " <tr> <th>Name</th> <th>Salary</th> </tr>";
     for (let i = 0; i < salaries.length; i++)
     {
         let newTR = document.createElement('tr');
@@ -40,8 +48,6 @@ function displaySalary()
         newTR.appendChild(newTDName);
         newTR.appendChild(newTDSalary);
         employeeTable.appendChild(newTR);
-        console.log("newTDName: "+newTDName.textContent+" | newTDSalary: "+newTDSalary.textContent);
-
     }
     employeeTable.style.visibility = 'visible';
 }

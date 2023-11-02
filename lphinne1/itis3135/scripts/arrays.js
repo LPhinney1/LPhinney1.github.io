@@ -45,6 +45,8 @@ function displaySalary()
         let newTDSalary = document.createElement('td');
         newTDName.textContent = person[i];
         newTDSalary.textContent = "$"+salaries[i].toFixed(2);
+        newTDSalary.style.textAlign = 'right';
+        newTDSalary.style.fontFamily = 'Anonymous Pro';
         newTR.appendChild(newTDName);
         newTR.appendChild(newTDSalary);
         employeeTable.appendChild(newTR);

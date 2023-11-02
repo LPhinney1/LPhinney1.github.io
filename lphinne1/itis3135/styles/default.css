@@ -26,6 +26,7 @@ header, footer {
     width: max-content;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 30px 30px 30px 30px;
 }
 
 main {
@@ -35,11 +36,12 @@ main {
     margin: 9px 0px;
     padding: 30px;
     width: min-content;
-    min-width: 87.5%;
+    min-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     font-size: 1.1rem;
+    border-radius: 30px 30px 30px 30px;
 }
 
 h1, h2 {

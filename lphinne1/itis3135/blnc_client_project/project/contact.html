@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLNC Contact</title>
+    </head>
+    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Poppins&family=Slabo+13px&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/blnc_styles.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h1>CONTACT</h1>
+            <form action="#">
+                <fieldset class="contact-form">
+                    <label for="name">Enter Your Full Name: <input id="name" name="name" type="text" required></label>
+                    <label for="email">Enter Your Email: <input id="email" name="email" type="text" required></label>
+                    <label for="phone">Enter Your Phone Number: <input id="phone" name="phone" type="text"></label>
+                    <label for="message">Message: <textarea name="message" id="message" cols="30" rows="10" required></textarea></label>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/HTMLInclude.js"></script>
+    </body>
+</html>

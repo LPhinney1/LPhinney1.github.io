@@ -1,0 +1,144 @@
+*, :root {
+    /*
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Slabo 13px', serif;
+    https://coolors.co/f5f5f5-62c2f0-e1672a-df1d24-6f4599-118c42
+    */
+    --off-white: #F5F5F5;
+    --sky-blue: #62C2F0;
+    --spanish-orange: #E1672A;
+    --rojo: #DF1D24;
+    --royal-purple: #6f4599;
+    --sea-green: #118C42;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--sky-blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    color: var(--off-white);
+    background-color: var(--sky-blue);
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    color: var(--off-white);
+    background-color: var(--sky-blue);
+    width: 100%;
+}
+
+main {
+    background-color: var(--off-white);
+    border: 3px solid black;
+    border-radius: 12px 12px 12px 12px;
+    width: 99%;
+    min-height: 50vh;
+    margin: 12px auto;
+    padding: 12px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    font-size: 2.25em;
+    font-family: 'Slabo 13px', serif;
+    font-weight: 1000;
+    margin-top: auto;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--sea-green);
+}
+
+button{
+    width: 300px;
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+.index-page{
+    text-align: center;
+}
+
+.index-page button{
+    display: block;
+    margin: 12px auto;
+    color: var(--off-white);
+}
+
+.image-gallery img{
+    display: block;
+    max-height: 99vh;
+    margin: 12px auto;
+    cursor: pointer;
+}
+
+.image-gallery figure figcaption{
+    display: none;
+}
+
+.news-articles div{
+    min-height: 7.5vh;
+}
+
+.news-articles div p {
+    display: none;
+}
+
+.news-articles h2 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-form {
+    border: none;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea{
+    display: block;
+    margin-top: 3px;
+}
+
+.contact-form textarea{
+    height: 240px;
+    width: 20%;
+}
+
+.contact-form input{
+    width: 240px;
+    height: 30px;
+    margin-top: 3px;
+}
+
+.contact-form button{
+    background-color: var(--sea-green);
+    color: var(--off-white);
+    margin-top: 3px;
+    width: 120px;
+}

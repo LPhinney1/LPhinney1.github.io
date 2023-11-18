@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | Interactive Drawing</title>
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>Interactive Drawing</h2>
+            <ul>
+                <li>Hold down mouse to draw on canvas</li>
+                <li>Releasing hold activates the eraser</li>
+                <li>While drawing, move mouse slowly to ensure no breakage</li>
+            </ul>
+            <div id="sketch-canvas" style="border: 1px solid black;"></div>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+        <script src="../scripts/sketch.js"></script>
+        <script src="../scripts/HTMLInclude.js"></script>
+    </body>
+    </html>

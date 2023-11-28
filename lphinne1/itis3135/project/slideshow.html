@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logan Phinney's Laughing Pterodactyl | ITIS3135 | Slideshow</title>
+    </head>
+    <body>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/default.css">
+        <div data-include="../components/header.html"></div>
+        <main>
+            <h2>Slideshow</h2>
+            <figure class="slideshow-container">
+                <img class="slideshow-image" src="../images/slideshow_1.png" alt="L | Lexus" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_2.png" alt="O | Orange Frog" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_3.png" alt="G | Greenery" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_4.png" alt="A | Alarm" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_5.png" alt="N | Notebook"loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_6.png" alt="P | Painting" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_7.png" alt="H | Hammock" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_8.png" alt="I | Ink Pens" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_9.png" alt="N | New Balance" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_10.png" alt="N | Night Sky" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_11.png" alt="E | Exit Sign" loading="lazy">
+                <img class="slideshow-image" src="../images/slideshow_12.png" alt="Y | Yeti Cooler" loading="lazy">
+                <figcaption id="caption-text" style="font-size: x-large; margin: 12px;">temporary filler text.</figcaption>
+            </figure>
+            <div style="text-align: center;">
+                <button class="prev square-button" onclick="plusEqualsSlideIndex(-1)">&lt;</button>
+                <button class="next square-button" onclick="plusEqualsSlideIndex(1)">&gt;</button>
+            </div>
+            <figure class="thumbnail-container">
+                <img class="thumbnail-image" onclick="currentImage(1)" src="../images/slideshow_1.png" alt="L | Lexus">
+                <img class="thumbnail-image" onclick="currentImage(2)" src="../images/slideshow_2.png" alt="O | Orange Frog">
+                <img class="thumbnail-image" onclick="currentImage(3)" src="../images/slideshow_3.png" alt="G | Greenery">
+                <img class="thumbnail-image" onclick="currentImage(4)" src="../images/slideshow_4.png" alt="A | Alarm">
+                <img class="thumbnail-image" onclick="currentImage(5)" src="../images/slideshow_5.png" alt="N | Notebook">
+                <img class="thumbnail-image" onclick="currentImage(6)" src="../images/slideshow_6.png" alt="P | Painting">
+                <img class="thumbnail-image" onclick="currentImage(7)" src="../images/slideshow_7.png" alt="H | Hammock">
+                <img class="thumbnail-image" onclick="currentImage(8)" src="../images/slideshow_8.png" alt="I | Ink Pens">
+                <img class="thumbnail-image" onclick="currentImage(9)" src="../images/slideshow_9.png" alt="N | New Balance">
+                <img class="thumbnail-image" onclick="currentImage(10)" src="../images/slideshow_10.png" alt="N | Night Sky">
+                <img class="thumbnail-image" onclick="currentImage(11)" src="../images/slideshow_11.png" alt="E | Exit Sign">
+                <img class="thumbnail-image" onclick="currentImage(12)" src="../images/slideshow_12.png" alt="Y | Yeti Cooler">
+            </figure>
+            <p style="text-align: center;">LOGAN_PHINNEY</p>
+        </main>
+        <div data-include="../components/footer.html"></div>
+        <script src="../scripts/slideshow.js"></script>
+        <script src="../scripts/HTMLInclude.js"></script>
+    </body>
+    </html>

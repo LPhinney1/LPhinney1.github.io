@@ -11,6 +11,7 @@
     --jungleGreen: #419D78;
     --mimiPink: #FAD8EF;
     --whiteSmoke: #F5F5F5;
+    --cmykRed: #E00000;
 }
 
 html {
@@ -216,6 +217,26 @@ li {
     font-size: larger;
     border: 3px solid var(--violet);
     padding: 3px;
+}
+
+.slideshow-container, .thumbnail-container {
+    text-align: center;
+}
+
+.slideshow-image {
+    min-height: 60vh;
+    border: 3px solid var(--violet);
+}
+
+.thumbnail-image {
+    max-height: 8vh;
+    opacity: 0.5;
+    border: 3px solid var(--cmykRed);
+}
+
+.active, .thumbnail-image:hover {
+    opacity: 1;
+    border: 3px solid var(--jungleGreen);
 }
 
 @media (max-width: 576px) {

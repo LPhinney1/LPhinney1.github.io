@@ -1,10 +1,5 @@
 $(document).ready(function () {
-    let toobinElement = document.getElementById("toobin");
-    let sorkinElement = document.getElementById("sorkin");
-    let chuaElement = document.getElementById("chua");
-    let sampsonElement = document.getElementById("sampson");
-
-    toobinElement.addEventListener("click", async () => {
+    document.getElementById("toobin").addEventListener("click", async () => {
         try {
             let response = await fetch('../json/toobin.json');
             let data = await response.json();
@@ -31,14 +26,13 @@ $(document).ready(function () {
 
             let oldMainElement = document.querySelector("main").parentNode;
             oldMainElement.replaceChild(newMainElement, document.querySelector("main"));
-
         }
         catch (error) {
             console.error('ERROR FETCHING JSON:', error);
         }
     });
 
-    sorkinElement.addEventListener("click", async () => {
+    document.getElementById("sorkin").addEventListener("click", async () => {
         try {
             let response = await fetch('../json/sorkin.json');
             let data = await response.json();
@@ -71,7 +65,7 @@ $(document).ready(function () {
         }
     });
 
-    chuaElement.addEventListener("click", async () => {
+    document.getElementById("chua").addEventListener("click", async () => {
         try {
             let response = await fetch('../json/chua.json');
             let data = await response.json();
@@ -104,7 +98,7 @@ $(document).ready(function () {
         }
     });
 
-    sampsonElement.addEventListener("click", async () => {
+    document.getElementById("sampson").addEventListener("click", async () => {
         try {
             let response = await fetch('../json/sampson.json');
             let data = await response.json();

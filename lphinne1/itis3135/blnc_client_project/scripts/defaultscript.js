@@ -15,3 +15,6 @@ galleryContainer.addEventListener('click', function (event) {
         else { paragraph.style.display = 'none'; }
     }
 });
+$(document).ready(() => {
+    console.log("JQUERY IS WORKING!");
+});
